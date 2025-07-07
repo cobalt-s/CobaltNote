@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5150FF732E1B447100FC3659 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5150FF722E1B446B00FC3659 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		51DD56392E11CCAC00D65C65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,10 +28,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5150FF722E1B446B00FC3659 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		51DD562B2E11CCAB00D65C65 /* CobaltNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobaltNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DD56382E11CCAC00D65C65 /* CobaltNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CobaltNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DD56422E11CCAC00D65C65 /* CobaltNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CobaltNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		512328442E12324D0064CFCC /* Exceptions for "CobaltNoteTests" folder in "CobaltNoteTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CobaltNoteUITests/CobaltNoteUITests.swift,
+				CobaltNoteUITests/CobaltNoteUITestsLaunchTests.swift,
+			);
+			target = 51DD56372E11CCAC00D65C65 /* CobaltNoteTests */;
+		};
+		512328452E12324D0064CFCC /* Exceptions for "CobaltNoteTests" folder in "CobaltNoteUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CobaltNoteUITests/CobaltNoteUITests.swift,
+				CobaltNoteUITests/CobaltNoteUITestsLaunchTests.swift,
+			);
+			target = 51DD56412E11CCAC00D65C65 /* CobaltNoteUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		51DD562D2E11CCAB00D65C65 /* CobaltNote */ = {
@@ -37,12 +61,11 @@
 		};
 		51DD563B2E11CCAC00D65C65 /* CobaltNoteTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				512328442E12324D0064CFCC /* Exceptions for "CobaltNoteTests" folder in "CobaltNoteTests" target */,
+				512328452E12324D0064CFCC /* Exceptions for "CobaltNoteTests" folder in "CobaltNoteUITests" target */,
+			);
 			path = CobaltNoteTests;
-			sourceTree = "<group>";
-		};
-		51DD56452E11CCAC00D65C65 /* CobaltNoteUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CobaltNoteUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +98,9 @@
 		51DD56222E11CCAB00D65C65 = {
 			isa = PBXGroup;
 			children = (
+				5150FF722E1B446B00FC3659 /* .gitignore */,
 				51DD562D2E11CCAB00D65C65 /* CobaltNote */,
 				51DD563B2E11CCAC00D65C65 /* CobaltNoteTests */,
-				51DD56452E11CCAC00D65C65 /* CobaltNoteUITests */,
 				51DD562C2E11CCAB00D65C65 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -153,9 +176,6 @@
 			dependencies = (
 				51DD56442E11CCAC00D65C65 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				51DD56452E11CCAC00D65C65 /* CobaltNoteUITests */,
-			);
 			name = CobaltNoteUITests;
 			packageProductDependencies = (
 			);
@@ -212,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5150FF732E1B447100FC3659 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,8 +416,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9MM9B725Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "CobaltNote needs access to save images to your photo library";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "CobaltNote needs access to save images to your photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -422,8 +446,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9MM9B725Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "CobaltNote needs access to save images to your photo library";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "CobaltNote needs access to save images to your photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
